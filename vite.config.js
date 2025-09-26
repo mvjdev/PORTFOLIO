@@ -9,8 +9,9 @@ export default defineConfig(({ mode }) => {
     base: `/${env.VITE_REPO_NAME}/`,
     plugins: [react(), tailwindcss()],
     server: {
-      open: true,
-      host: false, // Allow access from network devices
+      open: false,
+      host: true,
+      port: process.env.PORT || 5173, 
       proxy: {
         "/api": {
           target: "http://localhost:5000",
