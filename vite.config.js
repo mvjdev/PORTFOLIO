@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
     base: `/${env.VITE_REPO_NAME}/`,
     plugins: [react(), tailwindcss()],
     server: {
-      open: false,
+      open: true,
       host: true,
       port: process.env.PORT || 5173,
       allowedHosts: ["portfolio-on9o.onrender.com"], 
