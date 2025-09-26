@@ -11,7 +11,8 @@ export default defineConfig(({ mode }) => {
     server: {
       open: false,
       host: true,
-      port: process.env.PORT || 5173, 
+      port: process.env.PORT || 5173,
+      allowedHosts: ["portfolio-on9o.onrender.com"], 
       proxy: {
         "/api": {
           target: "http://localhost:5000",
