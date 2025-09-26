@@ -25,10 +25,10 @@ const Form = () => {
 
     emailjs
       .sendForm(
-        "service_4td937u",
-        "template_0nthueh",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         e.currentTarget,
-        "P3lAl17Njh9qKmhlL"
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
