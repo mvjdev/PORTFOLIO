@@ -4,7 +4,7 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-        "dev": "vite --port $PORT --host",
+        "dev": "vite --port ${PORT:-5173} --host",
         "build": "vite build",
         "start": "serve -s dist",
         "deploy": "vite build && gh-pages --dotfiles -d dist",
