@@ -20,7 +20,7 @@ const addressData = [
   },
   {
     icon: faPhone,
-    title: "Call Me Now",
+    title: "Phone Number",
     description: "+261 38 61 464 92",
   },
 ];
