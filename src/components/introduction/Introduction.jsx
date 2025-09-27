@@ -39,7 +39,7 @@ const Introduction = () => {
             </span>
           </p>
           <p className="text-xs xxs:text-lg lg:text-[18px] my-6">
-            I'm a Student <span className="bg-highlight">3rd year</span> and{" "}
+            I'm a student <span className="bg-highlight">3rd year</span> and{" "}
             <span className="bg-highlight"> Developer</span> based in
             Antananarivo, Malagasy. I strives to build immersive and beautiful
             web applications through carefully crafted code and deploy.
